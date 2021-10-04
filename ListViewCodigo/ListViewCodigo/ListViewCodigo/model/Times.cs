@@ -14,7 +14,7 @@ namespace ListViewCodigo.model
 
         public string tecnico { get; set; }
 
-        public ArraySegment<string> jogadores { get; set; }
+        public string[] jogadores  { get; set; }
 
     }
 }
