@@ -7,29 +7,41 @@
              x:Class="ListViewCodigo.Apresentacao"
              Title="{Binding nome}">
     <ContentPage.Content>
-        <StackLayout>
-            <Image Source="{Binding imagem}" HeightRequest="150"
-                   HorizontalOptions="Center" VerticalOptions="Start"/>
-            <Label Text="{Binding nome}"
-                VerticalOptions="Start" 
-                HorizontalOptions="CenterAndExpand" 
-                FontAttributes="Bold"
-                FontSize="Title"  />
-            <Label Text="{Binding descricao}"
-                   FontSize="Body" TextColor="#666464"/>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Técnico: "/>
-                <Label Text="{Binding tecnico}" FontSize="12"
+        <ScrollView>
+            <StackLayout>
+                <Image Source="{Binding imagem}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start" HeightRequest="150"/>
+                <Label Text="{Binding nome}"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold"
+                   FontSize="Title"/>
+                <Label Text="{Binding descricao}"
+                   FontSize="Body"
+                   TextColor="Aquamarine"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Técnico: "/>
+                    <Label Text="{Binding tecnico}" FontSize="12"
                        TextColor="Red"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
+                </StackLayout>
+                
                 <Label Text="Jogadores: "/>
-                <Label Text="{Binding jogadores}" FontSize="12"
-                       TextColor="White"/>
+                <ListView ItemsSource="{Binding jogadores}">
+                    
+                    <Label Text="{Binding jogadores}" FontSize="12"
+                       TextColor="AliceBlue"/>
+                    
+                    
+                </ListView>
+                <Button Text="Voltar" Clicked="btVoltar"
+                    BackgroundColor="Gold"
+                    BorderColor="White"
+                    BorderWidth="2"
+                    CornerRadius="8"
+                    FontAttributes="Bold"
+                    FontSize="18"/>
             </StackLayout>
-            <Button Text="Voltar"  BackgroundColor="Gold"
-                    BorderWidth="2" FontAttributes="Bold" FontSize="18"/>
-
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

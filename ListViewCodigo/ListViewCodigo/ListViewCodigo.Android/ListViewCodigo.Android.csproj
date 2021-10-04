@@ -85,22 +85,13 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\galudo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ListViewCodigo\ListViewCodigo.csproj">
       <Project>{1A84767E-79E4-46D5-B6A7-D982B7A7D1A9}</Project>
       <Name>ListViewCodigo</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\flamengo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\palmeiras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\fortaleza.png" />
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

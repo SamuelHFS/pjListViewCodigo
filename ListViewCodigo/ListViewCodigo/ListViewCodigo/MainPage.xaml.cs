@@ -24,7 +24,7 @@ namespace ListViewCodigo
             
                 new Times{
                 nome = "Galudo",
-                imagem = "galudo.png",
+                imagem = "img/galudo.png",
                 descricao = "maior de minas, CONFIA",
                 tecnico = "cabelo de boneca",
                 jogadores = new string[] {"Everson","Arana","Nathan S", "Alonso", "Mariano", "Allan", "Jair", "Nacho", "Savarino", "Hulk", "Keno"}
@@ -32,7 +32,7 @@ namespace ListViewCodigo
 
                 new Times{
                 nome = "Palmares",
-                imagem = "palmeiras.png",
+                imagem = "img/palmeiras.png",
                 descricao = "nao tem copinha e nao tem mundial",
                 tecnico = "abelaum",
                 jogadores = new string[] {"Weverton", "Gustavo Gomez", "Luan", "Piquerez", "Marcos Rocha", "Danilo", "Zé Rafael", "Scarpa", "Wesley", "Luiz Adriano", "Rony Rústico" }
@@ -40,7 +40,7 @@ namespace ListViewCodigo
 
                 new Times{
                 nome = "Flamilicia",
-                imagem = "flamengo.png",
+                imagem = "img/flamengo.png",
                 descricao = "sem meu josé alberto wright eu não consigo",
                 tecnico = "renight",
                 jogadores = new string[] {"Diego", "Leo Pereira", "Rodrigo Caio", "Isla", "Filipe Luís", "Arão", "Andreas Pereira", "Everton Ribeiro", "Arrascaxeira", "Belo Horizonte", "Gabigordo" }
@@ -48,11 +48,11 @@ namespace ListViewCodigo
 
                 new Times{
                 nome = "Lion do Pici",
-                imagem = "fortaleza.png",
+                imagem = "img/fortaleza.png",
                 descricao = "quem não tem história conta a dos outros",
                 tecnico = "vojfoda",
                 jogadores = new string[] {"Filipe Alves", "Tinga", "Benevenuto", "Titi", "Bruno Melo", "Ederson", "Felipe", "Lucas Lesma", "Yago Pikachu", "W.Paulista", "David" }
-                },
+                }
 
 
 
@@ -61,7 +61,7 @@ namespace ListViewCodigo
             lstview.ItemTemplate.SetBinding(ImageCell.ImageSourceProperty, "imagem");
             lstview.ItemTemplate.SetBinding(ImageCell.TextProperty, "nome");
             lstview.ItemTemplate.SetBinding(ImageCell.DetailProperty, "tecnico");
-            lstview.ItemTemplate.SetBinding(ImageCell.DetailProperty, "descricao");
+            
             this.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
 
             lstview.ItemSelected += Lstview_ItemSelected;

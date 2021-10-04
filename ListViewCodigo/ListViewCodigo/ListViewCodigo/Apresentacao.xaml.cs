@@ -16,7 +16,7 @@ namespace ListViewCodigo
         {
             if(t == null)
             {
-                throw new ArgumentNullException();
+                
             }
             BindingContext = t;
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace ListViewCodigo
 
         private void btVoltar(object sender, EventArgs e)
         {
-
+            Navigation.PopToRootAsync();
         }
     }
 }
