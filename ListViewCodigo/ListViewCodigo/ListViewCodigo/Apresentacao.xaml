@@ -25,15 +25,15 @@
                     <Label Text="{Binding tecnico}" FontSize="12"
                        TextColor="Red"/>
                 </StackLayout>
-                
+
                 <Label Text="Jogadores: "/>
-                <ListView ItemsSource="{Binding jogadores}">
-                    
-                    <Label Text="{Binding jogadores}" FontSize="12"
-                       TextColor="AliceBlue"/>
-                    
-                    
-                </ListView>
+                <ListView ItemsSource="{Binding jogadores}"
+                          
+                          SeparatorVisibility="Default"
+                          SeparatorColor="Gray"
+                         
+                          />
+
                 <Button Text="Voltar" Clicked="btVoltar"
                     BackgroundColor="Gold"
                     BorderColor="White"
